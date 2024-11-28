@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Buku</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <img src="aset/logott.png" alt="" width="40px">
+            <a class="navbar-brand text-white" href="#">SaldoOn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link btn py-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn py-3" href="buku.html">BUKU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn py-3" href="alat.html">ALAT TULIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn py-3" href="per.html">PERALATAN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<div class="container my-5 mt-9">
+    <h1 class="text-center mb-4">Produk Buku yang Dijual</h1>
+
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="1000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>5.000</p>
+                    <p class="card-text">Harga RP7.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#1"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="1" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp5.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp5.000</p>
+                            <h6>Total Harga:Rp7.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu Baru</option>
+                                            <option value="2">Transfer Bank</option>
+                                            <option value="3">Agen Terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="2000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>10.000</p>
+                    <p class="card-text">Harga RP12.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#2"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="2" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp10.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp10.000</p>
+                            <h6>Total Harga:Rp12.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu Baru</option>
+                                            <option value="2">Transfer Bank</option>
+                                            <option value="3">Agen terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="3000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>15.000</p>
+                    <p class="card-text">Harga RP17.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#3"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="3" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp15.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp15.000</p>
+                            <h6>Total Harga:Rp17.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu BAru</option>
+                                            <option value="2">Transfer bank</option>
+                                            <option value="3">Agen Terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="1000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>20.000</p>
+                    <p class="card-text">Harga RP22.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#4"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="4" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp20.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp20.000</p>
+                            <h6>Total Harga:Rp22.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu Baru</option>
+                                            <option value="2">Transfer bank</option>
+                                            <option value="3">Agen Terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="2000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>25.000</p>
+                    <p class="card-text">Harga RP27.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#5"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="5" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp25.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp25.000</p>
+                            <h6>Total Harga:Rp27.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu Baru</option>
+                                            <option value="2">Transfer Bank</option>
+                                            <option value="3">Agen Terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="3000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>50.000</p>
+                    <p class="card-text">Harga RP52.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#6"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="6" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp50.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp50.000</p>
+                            <h6>Total Harga:Rp52.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu Baru</option>
+                                            <option value="2">Transfer Bank</option>
+                                            <option value="3">Agen Terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="1000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>75.000</p>
+                    <p class="card-text">Harga RP77.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#7"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="7" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp75.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp75.000</p>
+                            <h6>Total Harga:Rp77.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu Baru</option>
+                                            <option value="2">Transfer Bank</option>
+                                            <option value="3">Agen Terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="2000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>100.000</p>
+                    <p class="card-text">Harga RP102.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#8"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="8" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp100.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp100.000</p>
+                            <h6>Total Harga:Rp102.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">KArtu Baru</option>
+                                            <option value="2">Transfer Bank</option>
+                                            <option value="3">Agen terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 9 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="2000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>250.000</p>
+                    <p class="card-text">Harga RP257.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#9"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="9" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp250.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp250.000</p>
+                            <h6>Total Harga:Rp257.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu Baru</option>
+                                            <option value="2">Transfer Bank</option>
+                                            <option value="3">Agen terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 10 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="1000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>500.000</p>
+                    <p class="card-text">Harga RP502.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#10"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="10" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp500.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp500.000</p>
+                            <h6>Total Harga:Rp502.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu Baru</option>
+                                            <option value="2">transfer Bank</option>
+                                            <option value="3">Agen Terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 11 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="2000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>1.000.000</p>
+                    <p class="card-text">Harga RP1.002.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#11"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="11" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp1.000.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp1.000.000</p>
+                            <h6>Total Harga:Rp1.002.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu Baru</option>
+                                            <option value="2">Transfer Bank</option>
+                                            <option value="3">Agen Terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 12 -->
+        <div class="col ">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" data-aos="fade-up"
+            data-aos-duration="3000">
+                <img src="aset/prodak/gopay.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Saldo Gopay</h5>
+                    <p>2.500.000</p>
+                    <p class="card-text">Harga RP2.502.500 </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#12"
+                        aria-controls="offcanvasScrolling">Lihat Selengkapnya</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="12" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Saldo Gopay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Tutup"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <img src="aset/prodak/gopay.jpg" class="img-thumbnail" alt="...">
+                            <h6>Saldo Gopay</h6>
+                            <p>Saldo : Rp2.500.000
+                            <p>
+                            <p>Biaya Admin : 2.500</p>
+                            <p>Deskripsi :<br>Saldo Gopay Rp2.500.000</p>
+                            <h6>Total Harga:Rp2.502.500</h6>
+
+                            <!-- Tombol Pesan -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#orderModal">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Modal Pesanan -->
+                    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="orderModalLabel">Buat Pesanan Anda</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nameInput" class="form-label">Masukan Nomer</label>
+                                            <input type="text" class="form-control" id="nameInput"
+                                                placeholder="Masukan nomer anda">
+                                        </div>
+                                        <label for="nameInput" class="form-label">Metode Pembayaran</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Metode yang tersedia</option>
+                                            <option value="1">Kartu Baru</option>
+                                            <option value="2">Transfer bank</option>
+                                            <option value="3">Agen Terdekat</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success mt-3"> Beli</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

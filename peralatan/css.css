@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #25D366;
+    margin: 20px 0;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    line-height: 1.6;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+}
+
+.features {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features ul li {
+    padding: 10px 0;
+    color: #333;
+}
+
+.features ul li:before {
+    content: '✔️';
+    padding-right: 10px;
+    color: #25D366;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta a {
+    padding: 15px 30px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #128C7E;
+}
+/* Gaya dasar untuk sticky section */
+.lg-home__capsule-section {
+    position: sticky;
+    top: 60px; /* Untuk layar standar */
+    z-index: 10;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .lg-home__capsule-section {
+        top: 70px; /* Untuk layar lebih besar */
+    }
+}
+
+/* Gaya tambahan saat elemen sticky ter-scroll */
+.sticky-active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambah bayangan saat sticky aktif */
+}
+
+.card {
+    width: 300px;
+    
+}
+.lghomepagecapsule__container {
+    display: flex;
+    justify-content: center; /* Memposisikan tombol di tengah */
+    align-items: center; /* (Opsional) untuk posisi vertikal di tengah jika diperlukan */
+}

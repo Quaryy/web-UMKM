@@ -1,0 +1,27 @@
+/* Gaya dasar untuk sticky section */
+.lg-home__capsule-section {
+    position: sticky;
+    top: 60px; /* Untuk layar standar */
+    z-index: 10;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .lg-home__capsule-section {
+        top: 70px; /* Untuk layar lebih besar */
+    }
+}
+
+/* Gaya tambahan saat elemen sticky ter-scroll */
+.sticky-active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambah bayangan saat sticky aktif */
+}
+
+.card {
+    width: 300px;
+    
+}
